@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tip Calculator</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="main.js" defer></script>
+</head>
+<body>
+  <h1 class="hero">
+    SPLI<br>TTER
+  </h1>
+  <article class="interface">
+    <section class="bill">
+      <div class="billInput">
+        <label for="bill">Bill</label>
+        <input type="number" name="bill" id="bill" placeholder="0.00">
+        <i class="icon dollarIcon"><img src="/images/icon-dollar.svg" alt="person"></i>
+      </div>
+      <div>Selected Tip %</div>
+      <div class="tipcontainer">
+        <input class = "pct" type="button" id="5" value="5%">
+        <input class = "pct" type="button" id="10" value="10%">
+        <input class = "pct" type="button" id="15" value="15%">
+        <input class = "pct" type="button" id="25" value="25%">
+        <input class = "pct" type="button" id="50" value="50%">
+        <input class = "pct" type="number" name="Custom" id="Custom" placeholder="Custom">
+      </div>
+      <div class="personInput">
+        <div class="peopleMessage">No of people must be greater than 0</div>
+        <label for="people">Number of people</label>
+        <input type="number" name="people" id="people" placeholder="0">
+        <i class="icon personIcon"><img src="/images/icon-person.svg" alt="person"></i>
+      </div>
+    </section>
+    <section class="calculator">
+      <div class="c">
+        <p class="tip">Tip Amount<span class="tipSpan">/ person</span></p>
+        <div class="amt Rate">$0.00</div>
+      </div>
+      <div class="c">
+        <p class="tip">Total<span class="tipSpan">/ person</span></p>
+        <div class="amt total">$0.00</div>
+      </div>
+      <div class="btns">
+        <input type="button" class="action" value="Split" id="submit">
+        <input type="button" class="action" value="reset" id="reset">
+      </div>
+    </section>
+  </article>
+</body>
+</html>
